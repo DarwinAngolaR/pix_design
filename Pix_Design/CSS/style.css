@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'anson';
+    src: url('../font/anson-regular.eot'); /* IE9 */
+	src: url('anson-regular.eot?#iefix') format('embedded-opentype'),/* IE6-IE8 */
+         url('../font/anson-regular.woff') format('woff'), /* Modern Browsers */
+         url('../font/anson-regular.ttf') format('truetype'), /* Safari, Android, IOS */
+         url('../font/anson-regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.banner1, h2, h3, header{
+    font-family: 'anson';
+}
+.banner2 img{
+    width: 100%;
+}
+p, label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    width: auto;
+}
+
+h3{
+    text-transform: uppercase;
+}
+
+header{
+    background-image: url(../IMG/img/theme/header.png);
+}
+
+.header1{
+    display: flex;
+    justify-content: space-between;
+    max-width: 960px;
+    margin: auto;
+    padding: 1%;
+}
+
+.logo{
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
+}
+
+h2{
+    grid-column-start: 2;
+    grid-row-start: 2;
+    text-align: center;
+    color: tomato;
+    font-size: calc(1em + 1vw);
+}
+
+.close{
+    grid-column-start: 3;
+    grid-row-start: 3;
+    text-align: right;
+}
+
+.albert{
+    color: tomato;
+    grid-row-start: 3;
+    grid-column-start: 2;
+    text-align: center;
+    text-transform: none;
+}
+
+.white{
+    color: white;
+}
+
+.orange{
+    color: tomato;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10%;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+li{
+    padding: 0 10px;
+}
+
+.ban2{
+    margin: 3% 0;
+}
+
+.menu{
+    color: white;
+    width: 10%;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.menu:hover{
+    background-color: tomato;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+span{
+    margin: 1%;
+}
+
+.date{
+    font-style: italic;
+}
+
+.banner1{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    max-width: 950px;
+    margin: auto;
+    padding: 1% 0;
+}
+
+.banner2, .banner3, .banner4{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    max-width: 950px;
+    padding: 2% 0;
+}
+
+.gris{
+    background-color: rgb(219, 219, 219);
+}
+
+.image{
+    padding: 0 5px;
+}
+
+footer{
+    background-color: rgb(65, 65, 65);
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    padding: 2% 20%;
+}
+
+.borde{
+    border-radius: 5px;
+    border: 5px solid white;
+    box-shadow: 0px 0px 10px rgb(192, 192, 192);
+    margin: 5px;
+}
+
+.textf{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 12px;
+}
+
+.diret{
+    margin: 8px 0;
+}
+
+.diret2{
+    font-style: italic;
+}
+
+.champ{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    color: white;
+    font-size: 12px;
+}
+
+input{
+    margin: 5px 10px;
+    padding: 5px;
+    border-radius: 15px;
+    font-size: 10px;
+}
+
+.mail{
+    margin: 5px 0px;
+    padding: 5px;
+    border-radius: 15px;
+    font-size: 10px;
+    width: 70%;
+}
+
+.valor{
+    width: 130%;
+    padding-top: 5px;
+}
+
+.redes{
+    display: flex;
+    flex-direction: row;
+}
+
+#face{
+    width: 50px;
+    height: 50px;
+    background-image: url(../IMG/img/theme/reseaux.png);
+    background-position-x: left;
+}
+
+#face:hover{
+    background-position-y: bottom;
+}
+
+#twitter{
+    width: 50px;
+    height: 50px;
+    background-image: url(../IMG/img/theme/reseaux.png);
+    background-position-x: center;
+}
+
+#twitter:hover{
+    background-image: url(../IMG/img/theme/reseaux.png);
+    background-position-y: bottom;
+}
+
+#blog{
+    width: 50px;
+    height: 50px;
+    background-image: url(../IMG/img/theme/reseaux.png);
+    background-position-x: right;
+}
+
+#blog:hover{
+    background-image: url(../IMG/img/theme/reseaux.png);
+    background-position-y: bottom;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 700px){
+
+    .logo{
+        align-items: center;
+    }
+    
+    .header1{
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        width: auto;
+    }
+
+    .gris{
+        text-align: center;
+    }
+
+    .banner1, .banner2, .banner3, .banner4{
+        display: flex;
+        flex-flow: column wrap;
+        width: auto;
+        align-items: center;
+    }
+
+    footer{
+        padding: 5% 3%;
+        flex-direction: column-reverse;
+    }
+
+    .redes {
+        justify-content: space-around;
+        padding: 5%;
+    }
+}
